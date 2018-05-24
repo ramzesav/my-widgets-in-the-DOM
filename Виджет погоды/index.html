@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Виджет погоды</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="container">
+ <div class="spin"></div>
+ <div class="weather-body hidden">
+   <div class="main-info">
+     <h1><i class="wi" id="icon"></i></h1>
+     <h2 class="temp0"></h2>
+   </div> 
+   <div class="secondary-info"> 
+     <h2 class="city"></h2>
+     <h5 class="icon-info">
+       <i class="wi wi-humidity"></i>&nbsp;
+       <span id="humidity">--</span>%
+       <i class="wi wi-strong-wind"></i>
+       <span id="wind">--</span>mph
+     </h5>
+     <h6 class="info">Mostly Cloudy</h6>
+   </div>
+ </div>
+ 
+ <div class="days" id="days">
+
+ </div>
+</div>
+	
+  <script src='scripts/ui.js' defer></script>
+	<script src="scripts/common.js" defer></script>
+</body>
+</html>
