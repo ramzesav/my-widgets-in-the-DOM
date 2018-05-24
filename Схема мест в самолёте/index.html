@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Схема мест в самолёте</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="header-bar affix">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 header-controls">
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="acSelect" class="control-label">Выбрать самолёт:</label>
+            <select class="form-control" name="ACSelect" id="acSelect" style="width: 10em">
+              <option value="a319">A319 (150 пассажиров)</option>
+              <option value="a320">A320 (180 пассажиров)</option>
+              <option value="a320x">A320 (186 пассажиров)</option>
+              <option value="a321">A321 (230 пассажиров)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button id="btnSeatMap" class="btn btn-default"><span class="glyphicon glyphicon-plane"></span> Показать схему</button>
+          </div>
+          <div class="form-group">
+            <button id="btnSetFull" class="btn btn-success"><span class="glyphicon glyphicon-plane"></span> Заполнить</button>
+          </div>
+          <div class="form-group">
+            <button id="btnSetEmpty" class="btn btn-warning"><span class="glyphicon glyphicon-plane"></span> Очистить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-view container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 id="seatMapTitle" class="text-center">Выберите самолёт</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div id="seatMapDiv" class="col-xs-12 seating-chart block-center">
+      <h3 class='text-center'>Самолёт не выбран</h3>
+    </div>
+  </div>
+</div>
+<div class="total-bar container">
+  <div class="row text-center total-contents">
+    <div class="col-xs-4">Всего мест: <span class="total-number" id="totalPax">XXX</span></div>
+    <div class="col-xs-4">Взрослых: <span class="total-number" id="totalAdult">XXX</span></div>
+    <div class="col-xs-4">За полцены: <span class="total-number" id="totalHalf">XXX</span></div>
+  </div>
+</div>	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script src="scripts/common.js"></script>
+</body>
+</html>
